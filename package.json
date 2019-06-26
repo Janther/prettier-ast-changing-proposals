@@ -1,4 +1,14 @@
 {
+  "name": "SolidityParenthesesComparison",
+  "version": "1.0.0",
+  "description": "PoC: Parentheses in Binary Operations in Solidity using Prettier JS output.",
+  "repository": "git@github.com:Janther/SolidityParenthesesComparison.git",
+  "author": "Klaus Hott Vidal <klahott@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/truffle compile",
+    "test": "./node_modules/.bin/truffle test"
+  },
   "dependencies": {
     "bn.js": "^4.11.8",
     "truffle": "^5.0.24"
