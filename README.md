@@ -1,6 +1,13 @@
-# Solidity Parentheses Comparison
+# Explicit Variable Type.
 
-PoC: Parentheses in Binary Operations in Solidity using Prettier JS output.
+As described in the [documentation](https://solidity.readthedocs.io/en/latest/types.html), `int`,`uint`, and `byte` are aliases for `int256`,`uint256`, and `bytes1` respectively.
+
+This project contains tests that prove that, any combination of declarations and uses of these types will generate the same bytecode.
+Thus Prettier can enforce the use of Explicit types across the project.
+
+This feature was added to the plugin at version `1.0.0-alpha.27`.
+
+# Parentheses
 
 Playing around with Prettier JS, I noticed that the expression `a / b * c` would be printed as `(a / b) * c`.
 This change has no repercussion in the output, but there are benefits for the developer as seeing it can uncover missing bits in case of working with integers.
