@@ -91,7 +91,7 @@ Here is a list of all the combinations and their changes:
 | `a ** b * c;`      | `a ** b * c;`        |
 | `a ** b / c;`      | `a ** b / c;`        |
 | `a ** b % c;`      | `a ** b % c;`        |
-| `a ** b ** c;`     | `a ** (b ** c);`     |
+| `a ** b ** c;`     | `(a ** b) ** c;`     |
 | `a ** b << c;`     | `(a ** b) << c;`     |
 | `a ** b >> c;`     | `(a ** b) >> c;`     |
 | `a ** b & c;`      | `(a ** b) & c;`      |

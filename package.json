@@ -12,5 +12,9 @@
   "dependencies": {
     "bn.js": "^4.11.8",
     "truffle": "^5.0.24"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.27"
   }
 }
