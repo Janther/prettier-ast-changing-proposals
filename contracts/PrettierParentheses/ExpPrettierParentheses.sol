@@ -23,7 +23,7 @@ contract ExpPrettierParentheses {
     }
 
     function expExp(uint a, uint b, uint c) public pure returns (uint) {
-        return a ** b ** c;
+        return (a ** b) ** c;
     }
 
     function expShiftL(uint a, uint b, uint c) public pure returns (uint) {
