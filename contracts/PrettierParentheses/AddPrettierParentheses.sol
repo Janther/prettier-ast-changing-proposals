@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract AddPrettierParentheses {
-    function addAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function addAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + b + c;
     }
 
-    function addSub(uint a, uint b, uint c) public pure returns (uint) {
+    function addSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + b - c;
     }
 
-    function addMul(uint a, uint b, uint c) public pure returns (uint) {
+    function addMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + b * c;
     }
 
-    function addDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function addDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + b / c;
     }
 
-    function addMod(uint a, uint b, uint c) public pure returns (uint) {
+    function addMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + (b % c);
     }
 
-    function addExp(uint a, uint b, uint c) public pure returns (uint) {
+    function addExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a + b ** c;
     }
 
-    function addShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function addShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a + b) << c;
     }
 
-    function addShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function addShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a + b) >> c;
     }
 
-    function addBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function addBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a + b) & c;
     }
 
-    function addBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function addBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a + b) | c;
     }
 
-    function addBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function addBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a + b) ^ c;
     }
 }

@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract MulNoParentheses {
-    function mulAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function mulAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b + c;
     }
 
-    function mulSub(uint a, uint b, uint c) public pure returns (uint) {
+    function mulSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b - c;
     }
 
-    function mulMul(uint a, uint b, uint c) public pure returns (uint) {
+    function mulMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b * c;
     }
 
-    function mulDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function mulDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b / c;
     }
 
-    function mulMod(uint a, uint b, uint c) public pure returns (uint) {
+    function mulMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b % c;
     }
 
-    function mulExp(uint a, uint b, uint c) public pure returns (uint) {
+    function mulExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b ** c;
     }
 
-    function mulShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function mulShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b << c;
     }
 
-    function mulShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function mulShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b >> c;
     }
 
-    function mulBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function mulBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b & c;
     }
 
-    function mulBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function mulBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b | c;
     }
 
-    function mulBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function mulBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a * b ^ c;
     }
 }

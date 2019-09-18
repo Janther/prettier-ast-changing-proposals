@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract ExpPrettierParentheses {
-    function expAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function expAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a ** b + c;
     }
 
-    function expSub(uint a, uint b, uint c) public pure returns (uint) {
+    function expSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a ** b - c;
     }
 
-    function expMul(uint a, uint b, uint c) public pure returns (uint) {
+    function expMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a ** b * c;
     }
 
-    function expDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function expDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a ** b / c;
     }
 
-    function expMod(uint a, uint b, uint c) public pure returns (uint) {
+    function expMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a ** b % c;
     }
 
-    function expExp(uint a, uint b, uint c) public pure returns (uint) {
+    function expExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) ** c;
     }
 
-    function expShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function expShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) << c;
     }
 
-    function expShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function expShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) >> c;
     }
 
-    function expBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function expBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) & c;
     }
 
-    function expBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function expBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) | c;
     }
 
-    function expBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function expBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a ** b) ^ c;
     }
 }

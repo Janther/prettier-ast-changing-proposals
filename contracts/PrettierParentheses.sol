@@ -13,7 +13,6 @@ import "./PrettierParentheses/BitOrPrettierParentheses.sol";
 import "./PrettierParentheses/BitXorPrettierParentheses.sol";
 import "./PrettierParentheses/LogicPrettierParentheses.sol";
 
-
 contract PrettierParentheses is
     AddPrettierParentheses,
     SubPrettierParentheses,

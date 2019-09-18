@@ -13,7 +13,6 @@ import "./NoParentheses/BitOrNoParentheses.sol";
 import "./NoParentheses/BitXorNoParentheses.sol";
 import "./NoParentheses/LogicNoParentheses.sol";
 
-
 contract NoParentheses is
     AddNoParentheses,
     SubNoParentheses,

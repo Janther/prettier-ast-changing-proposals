@@ -1,6 +1,5 @@
 pragma solidity 0.5.8;
 
-
 contract VariableTypesAlias {
     uint public a;
     int public b;

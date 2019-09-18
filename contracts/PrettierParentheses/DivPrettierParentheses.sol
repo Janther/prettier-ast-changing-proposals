@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract DivPrettierParentheses {
-    function divAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function divAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a / b + c;
     }
 
-    function divSub(uint a, uint b, uint c) public pure returns (uint) {
+    function divSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a / b - c;
     }
 
-    function divMul(uint a, uint b, uint c) public pure returns (uint) {
+    function divMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) * c;
     }
 
-    function divDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function divDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a / b / c;
     }
 
-    function divMod(uint a, uint b, uint c) public pure returns (uint) {
+    function divMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) % c;
     }
 
-    function divExp(uint a, uint b, uint c) public pure returns (uint) {
+    function divExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a / b ** c;
     }
 
-    function divShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function divShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) << c;
     }
 
-    function divShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function divShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) >> c;
     }
 
-    function divBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function divBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) & c;
     }
 
-    function divBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function divBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) | c;
     }
 
-    function divBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function divBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a / b) ^ c;
     }
 }

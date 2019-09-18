@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract ShiftRPrettierParentheses {
-    function shiftRAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> (b + c);
     }
 
-    function shiftRSub(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> (b - c);
     }
 
-    function shiftRMul(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> (b * c);
     }
 
-    function shiftRDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> (b / c);
     }
 
-    function shiftRMod(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> b % c;
     }
 
-    function shiftRExp(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a >> (b ** c);
     }
 
-    function shiftRShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a >> b) << c;
     }
 
-    function shiftRShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a >> b) >> c;
     }
 
-    function shiftRBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a >> b) & c;
     }
 
-    function shiftRBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a >> b) | c;
     }
 
-    function shiftRBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function shiftRBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a >> b) ^ c;
     }
 }

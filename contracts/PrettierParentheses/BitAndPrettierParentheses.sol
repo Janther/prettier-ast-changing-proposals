@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract BitAndPrettierParentheses {
-    function bitAndAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b + c);
     }
 
-    function bitAndSub(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b - c);
     }
 
-    function bitAndMul(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b * c);
     }
 
-    function bitAndDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b / c);
     }
 
-    function bitAndMod(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & b % c;
     }
 
-    function bitAndExp(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b ** c);
     }
 
-    function bitAndShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b << c);
     }
 
-    function bitAndShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & (b >> c);
     }
 
-    function bitAndBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a & b & c;
     }
 
-    function bitAndBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a & b) | c;
     }
 
-    function bitAndBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function bitAndBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return (a & b) ^ c;
     }
 }

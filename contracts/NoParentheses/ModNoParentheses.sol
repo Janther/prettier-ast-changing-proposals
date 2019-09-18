@@ -1,48 +1,91 @@
 pragma solidity 0.5.8;
 
-
 contract ModNoParentheses {
-    function modAdd(uint a, uint b, uint c) public pure returns (uint) {
+    function modAdd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b + c;
     }
 
-    function modSub(uint a, uint b, uint c) public pure returns (uint) {
+    function modSub(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b - c;
     }
 
-    function modMul(uint a, uint b, uint c) public pure returns (uint) {
+    function modMul(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b * c;
     }
 
-    function modDiv(uint a, uint b, uint c) public pure returns (uint) {
+    function modDiv(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b / c;
     }
 
-    function modMod(uint a, uint b, uint c) public pure returns (uint) {
+    function modMod(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b % c;
     }
 
-    function modExp(uint a, uint b, uint c) public pure returns (uint) {
+    function modExp(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b ** c;
     }
 
-    function modShiftL(uint a, uint b, uint c) public pure returns (uint) {
+    function modShiftL(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b << c;
     }
 
-    function modShiftR(uint a, uint b, uint c) public pure returns (uint) {
+    function modShiftR(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b >> c;
     }
 
-    function modBitAnd(uint a, uint b, uint c) public pure returns (uint) {
+    function modBitAnd(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b & c;
     }
 
-    function modBitOr(uint a, uint b, uint c) public pure returns (uint) {
+    function modBitOr(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b | c;
     }
 
-    function modBitXor(uint a, uint b, uint c) public pure returns (uint) {
+    function modBitXor(uint256 a, uint256 b, uint256 c)
+        public
+        pure
+        returns (uint256)
+    {
         return a % b ^ c;
     }
 }
