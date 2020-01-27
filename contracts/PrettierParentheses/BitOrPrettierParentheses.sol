@@ -1,4 +1,5 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
+
 
 contract BitOrPrettierParentheses {
     function bitOrAdd(uint256 a, uint256 b, uint256 c)
@@ -46,7 +47,7 @@ contract BitOrPrettierParentheses {
         pure
         returns (uint256)
     {
-        return a | (b ** c);
+        return a | (b**c);
     }
 
     function bitOrShiftL(uint256 a, uint256 b, uint256 c)

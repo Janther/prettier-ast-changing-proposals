@@ -1,4 +1,5 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
+
 
 contract ShiftLPrettierParentheses {
     function shiftLAdd(uint256 a, uint256 b, uint256 c)
@@ -46,7 +47,7 @@ contract ShiftLPrettierParentheses {
         pure
         returns (uint256)
     {
-        return a << (b ** c);
+        return a << (b**c);
     }
 
     function shiftLShiftL(uint256 a, uint256 b, uint256 c)

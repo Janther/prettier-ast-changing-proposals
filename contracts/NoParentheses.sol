@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
 
 import "./NoParentheses/AddNoParentheses.sol";
 import "./NoParentheses/SubNoParentheses.sol";
@@ -12,6 +12,7 @@ import "./NoParentheses/BitAndNoParentheses.sol";
 import "./NoParentheses/BitOrNoParentheses.sol";
 import "./NoParentheses/BitXorNoParentheses.sol";
 import "./NoParentheses/LogicNoParentheses.sol";
+
 
 contract NoParentheses is
     AddNoParentheses,

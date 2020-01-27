@@ -1,4 +1,5 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
+
 
 contract VariableTypesExplicit {
     uint256 public a;

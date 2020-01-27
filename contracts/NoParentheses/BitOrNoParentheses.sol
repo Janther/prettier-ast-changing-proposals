@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
 
 contract BitOrNoParentheses {
     function bitOrAdd(uint256 a, uint256 b, uint256 c)

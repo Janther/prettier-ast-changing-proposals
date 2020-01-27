@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
 
 import "./PrettierParentheses/AddPrettierParentheses.sol";
 import "./PrettierParentheses/SubPrettierParentheses.sol";
@@ -12,6 +12,7 @@ import "./PrettierParentheses/BitAndPrettierParentheses.sol";
 import "./PrettierParentheses/BitOrPrettierParentheses.sol";
 import "./PrettierParentheses/BitXorPrettierParentheses.sol";
 import "./PrettierParentheses/LogicPrettierParentheses.sol";
+
 
 contract PrettierParentheses is
     AddPrettierParentheses,

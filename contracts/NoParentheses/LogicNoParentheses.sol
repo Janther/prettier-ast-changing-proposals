@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
 
 contract LogicNoParentheses {
     function orOr(bool a, bool b, bool c) public pure returns (bool) {

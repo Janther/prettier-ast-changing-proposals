@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.6.1;
 
 contract ShiftLNoParentheses {
     function shiftLAdd(uint256 a, uint256 b, uint256 c)
