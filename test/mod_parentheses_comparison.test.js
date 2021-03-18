@@ -10,50 +10,50 @@ let c = new BN(crypto.randomBytes(16).toString("hex"), 16);
 let noParentheses;
 let prettierParentheses;
 
-contract("Compare ModNoParentheses to ModPrettierParentheses", accounts => {
+contract("Compare ModNoParentheses to ModPrettierParentheses", (accounts) => {
   before(async () => {
     noParentheses = await NoParentheses.deployed();
     prettierParentheses = await PrettierParentheses.deployed();
   });
 
-  it("has the same bytecode", function() {
+  it("has the same bytecode", function () {
     assert.equal(
-      NoParentheses.bytecode.slice(0, -68),
-      PrettierParentheses.bytecode.slice(0, -68)
+      NoParentheses.bytecode.slice(0, -86),
+      PrettierParentheses.bytecode.slice(0, -86)
     );
   });
 
-  it("modAdd:", async function() {
+  it("modAdd:", async function () {
     const result = await noParentheses.modAdd.call(a, b, c);
     const prettierResult = await prettierParentheses.modAdd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modSub:", async function() {
+  it("modSub:", async function () {
     const result = await noParentheses.modSub.call(a, b, c);
     const prettierResult = await prettierParentheses.modSub.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modMul:", async function() {
+  it("modMul:", async function () {
     const result = await noParentheses.modMul.call(a, b, c);
     const prettierResult = await prettierParentheses.modMul.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modDiv:", async function() {
+  it("modDiv:", async function () {
     const result = await noParentheses.modDiv.call(a, b, c);
     const prettierResult = await prettierParentheses.modDiv.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modMod:", async function() {
+  it("modMod:", async function () {
     const result = await noParentheses.modMod.call(a, b, c);
     const prettierResult = await prettierParentheses.modMod.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modExp:", async function() {
+  it("modExp:", async function () {
     let computed = false;
     while (!computed) {
       try {
@@ -76,31 +76,31 @@ contract("Compare ModNoParentheses to ModPrettierParentheses", accounts => {
     }
   });
 
-  it("modShiftL:", async function() {
+  it("modShiftL:", async function () {
     const result = await noParentheses.modShiftL.call(a, b, c);
     const prettierResult = await prettierParentheses.modShiftL.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modShiftR:", async function() {
+  it("modShiftR:", async function () {
     const result = await noParentheses.modShiftR.call(a, b, c);
     const prettierResult = await prettierParentheses.modShiftR.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modBitAnd:", async function() {
+  it("modBitAnd:", async function () {
     const result = await noParentheses.modBitAnd.call(a, b, c);
     const prettierResult = await prettierParentheses.modBitAnd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modBitOr:", async function() {
+  it("modBitOr:", async function () {
     const result = await noParentheses.modBitOr.call(a, b, c);
     const prettierResult = await prettierParentheses.modBitOr.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("modBitXor:", async function() {
+  it("modBitXor:", async function () {
     const result = await noParentheses.modBitXor.call(a, b, c);
     const prettierResult = await prettierParentheses.modBitXor.call(a, b, c);
     assert.ok(result.eq(prettierResult));

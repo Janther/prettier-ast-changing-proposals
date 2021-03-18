@@ -1,92 +1,92 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract SubPrettierParentheses {
-    function subAdd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subAdd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - b + c;
     }
 
-    function subSub(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subSub(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - b - c;
     }
 
-    function subMul(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subMul(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - b * c;
     }
 
-    function subDiv(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subDiv(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - b / c;
     }
 
-    function subMod(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subMod(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - (b % c);
     }
 
-    function subExp(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subExp(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a - b**c;
     }
 
-    function subShiftL(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subShiftL(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a - b) << c;
     }
 
-    function subShiftR(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subShiftR(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a - b) >> c;
     }
 
-    function subBitAnd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subBitAnd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a - b) & c;
     }
 
-    function subBitOr(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subBitOr(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a - b) | c;
     }
 
-    function subBitXor(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function subBitXor(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a - b) ^ c;
     }
 }

@@ -1,92 +1,92 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract AddPrettierParentheses {
-    function addAdd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addAdd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + b + c;
     }
 
-    function addSub(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addSub(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + b - c;
     }
 
-    function addMul(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addMul(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + b * c;
     }
 
-    function addDiv(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addDiv(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + b / c;
     }
 
-    function addMod(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addMod(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + (b % c);
     }
 
-    function addExp(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addExp(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a + b**c;
     }
 
-    function addShiftL(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addShiftL(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a + b) << c;
     }
 
-    function addShiftR(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addShiftR(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a + b) >> c;
     }
 
-    function addBitAnd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addBitAnd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a + b) & c;
     }
 
-    function addBitOr(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addBitOr(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a + b) | c;
     }
 
-    function addBitXor(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function addBitXor(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a + b) ^ c;
     }
 }

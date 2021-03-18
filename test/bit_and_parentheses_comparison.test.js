@@ -12,56 +12,56 @@ let prettierParentheses;
 
 contract(
   "Compare BitAndNoParentheses to BitAndPrettierParentheses",
-  accounts => {
+  (accounts) => {
     before(async () => {
       noParentheses = await NoParentheses.deployed();
       prettierParentheses = await PrettierParentheses.deployed();
     });
 
-    it("has the same bytecode", function() {
+    it("has the same bytecode", function () {
       assert.equal(
-        NoParentheses.bytecode.slice(0, -68),
-        PrettierParentheses.bytecode.slice(0, -68)
+        NoParentheses.bytecode.slice(0, -86),
+        PrettierParentheses.bytecode.slice(0, -86)
       );
     });
 
-    it("bitAndAdd:", async function() {
+    it("bitAndAdd:", async function () {
       const result = await noParentheses.bitAndAdd.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndAdd.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndSub:", async function() {
+    it("bitAndSub:", async function () {
       const result = await noParentheses.bitAndSub.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndSub.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndMul:", async function() {
+    it("bitAndMul:", async function () {
       const result = await noParentheses.bitAndMul.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndMul.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndDiv:", async function() {
+    it("bitAndDiv:", async function () {
       const result = await noParentheses.bitAndDiv.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndDiv.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndMod:", async function() {
+    it("bitAndMod:", async function () {
       const result = await noParentheses.bitAndMod.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndMod.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndExp:", async function() {
+    it("bitAndExp:", async function () {
       const result = await noParentheses.bitAndExp.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndExp.call(a, b, c);
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndShiftL:", async function() {
+    it("bitAndShiftL:", async function () {
       const result = await noParentheses.bitAndShiftL.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndShiftL.call(
         a,
@@ -71,7 +71,7 @@ contract(
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndShiftR:", async function() {
+    it("bitAndShiftR:", async function () {
       const result = await noParentheses.bitAndShiftR.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndShiftR.call(
         a,
@@ -81,7 +81,7 @@ contract(
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndBitAnd:", async function() {
+    it("bitAndBitAnd:", async function () {
       const result = await noParentheses.bitAndBitAnd.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndBitAnd.call(
         a,
@@ -91,7 +91,7 @@ contract(
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndBitOr:", async function() {
+    it("bitAndBitOr:", async function () {
       const result = await noParentheses.bitAndBitOr.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndBitOr.call(
         a,
@@ -101,7 +101,7 @@ contract(
       assert.ok(result.eq(prettierResult));
     });
 
-    it("bitAndBitXor:", async function() {
+    it("bitAndBitXor:", async function () {
       const result = await noParentheses.bitAndBitXor.call(a, b, c);
       const prettierResult = await prettierParentheses.bitAndBitXor.call(
         a,

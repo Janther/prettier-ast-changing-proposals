@@ -4,17 +4,17 @@ const VariableTypesMixed = artifacts.require("VariableTypesMixed");
 
 contract(
   "Compare VariableTypesAlias to VariableTypesExplicit and VariableTypesMixed",
-  accounts => {
-    it("has the same bytecode", function() {
+  (accounts) => {
+    it("has the same bytecode", function () {
       assert.equal(
-        VariableTypesAlias.bytecode.slice(0, -68),
-        VariableTypesExplicit.bytecode.slice(0, -68)
+        VariableTypesAlias.bytecode.slice(0, -86),
+        VariableTypesExplicit.bytecode.slice(0, -86)
       );
     });
-    it("has the same bytecode", function() {
+    it("has the same bytecode", function () {
       assert.equal(
-        VariableTypesAlias.bytecode.slice(0, -68),
-        VariableTypesMixed.bytecode.slice(0, -68)
+        VariableTypesAlias.bytecode.slice(0, -86),
+        VariableTypesMixed.bytecode.slice(0, -86)
       );
     });
   }

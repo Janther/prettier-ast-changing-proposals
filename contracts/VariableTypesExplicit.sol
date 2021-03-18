@@ -1,5 +1,5 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract VariableTypesExplicit {
     uint256 public a;
@@ -34,7 +34,17 @@ contract VariableTypesExplicit {
         uint256 _e,
         int256 _f,
         bytes1 _g
-    ) public returns (uint256, int256, bytes1, uint256, int256, bytes1) {
+    )
+        public
+        returns (
+            uint256,
+            int256,
+            bytes1,
+            uint256,
+            int256,
+            bytes1
+        )
+    {
         emit Event(_a, _b, _c, _e, _f, _g);
         return (_a, _b, _c, _e, _f, _g);
     }

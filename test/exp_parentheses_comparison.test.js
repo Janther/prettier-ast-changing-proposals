@@ -10,82 +10,80 @@ let c = new BN(crypto.randomBytes(16).toString("hex"), 16);
 let noParentheses;
 let prettierParentheses;
 
-contract("Compare ExpNoParentheses to ExpPrettierParentheses", accounts => {
+contract("Compare ExpNoParentheses to ExpPrettierParentheses", (accounts) => {
   before(async () => {
     noParentheses = await NoParentheses.deployed();
     prettierParentheses = await PrettierParentheses.deployed();
   });
 
-  it("has the same bytecode", function() {
+  it("has the same bytecode", function () {
     assert.equal(
-      NoParentheses.bytecode.slice(0, -68),
-      PrettierParentheses.bytecode.slice(0, -68)
+      NoParentheses.bytecode.slice(0, -86),
+      PrettierParentheses.bytecode.slice(0, -86)
     );
   });
 
-  it("expAdd:", async function() {
+  it("expAdd:", async function () {
     const result = await noParentheses.expAdd.call(a, b, c);
     const prettierResult = await prettierParentheses.expAdd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expSub:", async function() {
+  it("expSub:", async function () {
     const result = await noParentheses.expSub.call(a, b, c);
     const prettierResult = await prettierParentheses.expSub.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expMul:", async function() {
+  it("expMul:", async function () {
     const result = await noParentheses.expMul.call(a, b, c);
     const prettierResult = await prettierParentheses.expMul.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expDiv:", async function() {
+  it("expDiv:", async function () {
     const result = await noParentheses.expDiv.call(a, b, c);
     const prettierResult = await prettierParentheses.expDiv.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expMod:", async function() {
+  it("expMod:", async function () {
     const result = await noParentheses.expMod.call(a, b, c);
     const prettierResult = await prettierParentheses.expMod.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  // https://github.com/trufflesuite/ganache-cli/issues/575
-  // a ** b ** c; Crashes Ganache.
-  it.skip("expExp:", async function() {
+  it("expExp:", async function () {
     const result = await noParentheses.expExp.call(a, b, c);
     const prettierResult = await prettierParentheses.expExp.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expShiftL:", async function() {
+  it("expShiftL:", async function () {
     const result = await noParentheses.expShiftL.call(a, b, c);
     const prettierResult = await prettierParentheses.expShiftL.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expShiftR:", async function() {
+  it("expShiftR:", async function () {
     const result = await noParentheses.expShiftR.call(a, b, c);
     const prettierResult = await prettierParentheses.expShiftR.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expBitAnd:", async function() {
+  it("expBitAnd:", async function () {
     const result = await noParentheses.expBitAnd.call(a, b, c);
     const prettierResult = await prettierParentheses.expBitAnd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expBitOr:", async function() {
+  it("expBitOr:", async function () {
     const result = await noParentheses.expBitOr.call(a, b, c);
     const prettierResult = await prettierParentheses.expBitOr.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("expBitXor:", async function() {
+  it("expBitXor:", async function () {
     const result = await noParentheses.expBitXor.call(a, b, c);
     const prettierResult = await prettierParentheses.expBitXor.call(a, b, c);
     assert.ok(result.eq(prettierResult));

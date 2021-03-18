@@ -28,9 +28,7 @@ npm test
 
 ## Warning
 
-As you can see there are 2 pending tests. This is because Ganache likes to [crash](https://github.com/trufflesuite/ganache-cli/issues/575) on `a ** b ** c;`.
-
-Also in Prettier JS prints `a ** b ** c;` like `a ** (b ** c);` which is false in Solidity.
+In Prettier JS prints `a ** b ** c;` like `a ** (b ** c);` which is false in Solidity as the compiled code shows that `a ** b ** c;` equals to `(a ** b) ** c;`.
 
 # Proposed Changes
 

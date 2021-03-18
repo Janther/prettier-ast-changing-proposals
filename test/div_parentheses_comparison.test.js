@@ -10,50 +10,50 @@ let c = new BN(crypto.randomBytes(16).toString("hex"), 16);
 let noParentheses;
 let prettierParentheses;
 
-contract("Compare DivNoParentheses to DivPrettierParentheses", accounts => {
+contract("Compare DivNoParentheses to DivPrettierParentheses", (accounts) => {
   before(async () => {
     noParentheses = await NoParentheses.deployed();
     prettierParentheses = await PrettierParentheses.deployed();
   });
 
-  it("has the same bytecode", function() {
+  it("has the same bytecode", function () {
     assert.equal(
-      NoParentheses.bytecode.slice(0, -68),
-      PrettierParentheses.bytecode.slice(0, -68)
+      NoParentheses.bytecode.slice(0, -86),
+      PrettierParentheses.bytecode.slice(0, -86)
     );
   });
 
-  it("divAdd:", async function() {
+  it("divAdd:", async function () {
     const result = await noParentheses.divAdd.call(a, b, c);
     const prettierResult = await prettierParentheses.divAdd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divSub:", async function() {
+  it("divSub:", async function () {
     const result = await noParentheses.divSub.call(a, b, c);
     const prettierResult = await prettierParentheses.divSub.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divMul:", async function() {
+  it("divMul:", async function () {
     const result = await noParentheses.divMul.call(a, b, c);
     const prettierResult = await prettierParentheses.divMul.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divDiv:", async function() {
+  it("divDiv:", async function () {
     const result = await noParentheses.divDiv.call(a, b, c);
     const prettierResult = await prettierParentheses.divDiv.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divMod:", async function() {
+  it("divMod:", async function () {
     const result = await noParentheses.divMod.call(a, b, c);
     const prettierResult = await prettierParentheses.divMod.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divExp:", async function() {
+  it("divExp:", async function () {
     let computed = false;
     while (!computed) {
       try {
@@ -76,31 +76,31 @@ contract("Compare DivNoParentheses to DivPrettierParentheses", accounts => {
     }
   });
 
-  it("divShiftL:", async function() {
+  it("divShiftL:", async function () {
     const result = await noParentheses.divShiftL.call(a, b, c);
     const prettierResult = await prettierParentheses.divShiftL.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divShiftR:", async function() {
+  it("divShiftR:", async function () {
     const result = await noParentheses.divShiftR.call(a, b, c);
     const prettierResult = await prettierParentheses.divShiftR.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divBitAnd:", async function() {
+  it("divBitAnd:", async function () {
     const result = await noParentheses.divBitAnd.call(a, b, c);
     const prettierResult = await prettierParentheses.divBitAnd.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divBitOr:", async function() {
+  it("divBitOr:", async function () {
     const result = await noParentheses.divBitOr.call(a, b, c);
     const prettierResult = await prettierParentheses.divBitOr.call(a, b, c);
     assert.ok(result.eq(prettierResult));
   });
 
-  it("divBitXor:", async function() {
+  it("divBitXor:", async function () {
     const result = await noParentheses.divBitXor.call(a, b, c);
     const prettierResult = await prettierParentheses.divBitXor.call(a, b, c);
     assert.ok(result.eq(prettierResult));

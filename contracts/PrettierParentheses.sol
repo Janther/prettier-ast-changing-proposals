@@ -1,4 +1,5 @@
-pragma solidity 0.6.1;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 import "./PrettierParentheses/AddPrettierParentheses.sol";
 import "./PrettierParentheses/SubPrettierParentheses.sol";
@@ -12,7 +13,6 @@ import "./PrettierParentheses/BitAndPrettierParentheses.sol";
 import "./PrettierParentheses/BitOrPrettierParentheses.sol";
 import "./PrettierParentheses/BitXorPrettierParentheses.sol";
 import "./PrettierParentheses/LogicPrettierParentheses.sol";
-
 
 contract PrettierParentheses is
     AddPrettierParentheses,

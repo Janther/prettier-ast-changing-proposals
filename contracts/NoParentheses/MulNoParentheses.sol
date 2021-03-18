@@ -1,4 +1,5 @@
-pragma solidity 0.6.1;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract MulNoParentheses {
     function mulAdd(uint256 a, uint256 b, uint256 c)

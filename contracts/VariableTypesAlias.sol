@@ -1,5 +1,5 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract VariableTypesAlias {
     uint public a;
@@ -20,9 +20,23 @@ contract VariableTypesAlias {
 
     event Event(uint _a, int _b, byte _c, uint _e, int _f, byte _g);
 
-    function func(uint _a, int _b, byte _c, uint _e, int _f, byte _g)
+    function func(
+        uint _a,
+        int _b,
+        byte _c,
+        uint _e,
+        int _f,
+        byte _g
+    )
         public
-        returns (uint, int, byte, uint, int, byte)
+        returns (
+            uint,
+            int,
+            byte,
+            uint,
+            int,
+            byte
+        )
     {
         emit Event(_a, _b, _c, _e, _f, _g);
         return (_a, _b, _c, _e, _f, _g);

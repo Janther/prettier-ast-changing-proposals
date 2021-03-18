@@ -1,92 +1,92 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract BitXorPrettierParentheses {
-    function bitXorAdd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorAdd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b + c);
     }
 
-    function bitXorSub(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorSub(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b - c);
     }
 
-    function bitXorMul(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorMul(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b * c);
     }
 
-    function bitXorDiv(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorDiv(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b / c);
     }
 
-    function bitXorMod(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorMod(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ b % c;
     }
 
-    function bitXorExp(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorExp(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b**c);
     }
 
-    function bitXorShiftL(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorShiftL(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b << c);
     }
 
-    function bitXorShiftR(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorShiftR(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b >> c);
     }
 
-    function bitXorBitAnd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorBitAnd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ (b & c);
     }
 
-    function bitXorBitOr(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorBitOr(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a ^ b) | c;
     }
 
-    function bitXorBitXor(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function bitXorBitXor(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a ^ b ^ c;
     }
 }

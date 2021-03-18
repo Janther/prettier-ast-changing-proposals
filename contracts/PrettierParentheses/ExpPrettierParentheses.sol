@@ -1,92 +1,92 @@
-pragma solidity 0.6.1;
-
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 contract ExpPrettierParentheses {
-    function expAdd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expAdd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a**b + c;
     }
 
-    function expSub(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expSub(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a**b - c;
     }
 
-    function expMul(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expMul(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a**b * c;
     }
 
-    function expDiv(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expDiv(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a**b / c;
     }
 
-    function expMod(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expMod(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return a**b % c;
     }
 
-    function expExp(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expExp(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b)**c;
     }
 
-    function expShiftL(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expShiftL(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b) << c;
     }
 
-    function expShiftR(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expShiftR(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b) >> c;
     }
 
-    function expBitAnd(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expBitAnd(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b) & c;
     }
 
-    function expBitOr(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expBitOr(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b) | c;
     }
 
-    function expBitXor(uint256 a, uint256 b, uint256 c)
-        public
-        pure
-        returns (uint256)
-    {
+    function expBitXor(
+        uint256 a,
+        uint256 b,
+        uint256 c
+    ) public pure returns (uint256) {
         return (a**b) ^ c;
     }
 }

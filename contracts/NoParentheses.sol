@@ -1,4 +1,5 @@
-pragma solidity 0.6.1;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.4;
 
 import "./NoParentheses/AddNoParentheses.sol";
 import "./NoParentheses/SubNoParentheses.sol";
@@ -12,7 +13,6 @@ import "./NoParentheses/BitAndNoParentheses.sol";
 import "./NoParentheses/BitOrNoParentheses.sol";
 import "./NoParentheses/BitXorNoParentheses.sol";
 import "./NoParentheses/LogicNoParentheses.sol";
-
 
 contract NoParentheses is
     AddNoParentheses,
