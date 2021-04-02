@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.7.4;
+pragma solidity 0.8.3;
 
 contract ExpPrettierParentheses {
     function expAdd(
@@ -47,7 +47,7 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b)**c;
+        return a**(b**c);
     }
 
     function expShiftL(

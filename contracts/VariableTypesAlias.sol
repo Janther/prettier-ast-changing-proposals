@@ -1,44 +1,36 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.7.4;
+pragma solidity 0.8.3;
 
 contract VariableTypesAlias {
     uint public a;
     int public b;
-    byte public c;
     uint public e;
     int public f;
-    byte public g;
 
     struct S {
         uint a;
         int b;
-        byte c;
         uint e;
         int f;
-        byte g;
     }
 
-    event Event(uint _a, int _b, byte _c, uint _e, int _f, byte _g);
+    event Event(uint _a, int _b, uint _e, int _f);
 
     function func(
         uint _a,
         int _b,
-        byte _c,
         uint _e,
-        int _f,
-        byte _g
+        int _f
     )
         public
         returns (
             uint,
             int,
-            byte,
             uint,
-            int,
-            byte
+            int
         )
     {
-        emit Event(_a, _b, _c, _e, _f, _g);
-        return (_a, _b, _c, _e, _f, _g);
+        emit Event(_a, _b, _e, _f);
+        return (_a, _b, _e, _f);
     }
 }

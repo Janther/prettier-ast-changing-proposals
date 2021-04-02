@@ -1,11 +1,13 @@
 # Explicit Variable Type.
 
-As described in the [documentation](https://solidity.readthedocs.io/en/latest/types.html), `int`,`uint`, and `byte` are aliases for `int256`,`uint256`, and `bytes1` respectively.
+As described in the [documentation](https://solidity.readthedocs.io/en/latest/types.html), `int` and `uint` are aliases for `int256` and `uint256` respectively.
 
 This project contains tests that prove that, any combination of declarations and uses of these types will generate the same bytecode.
 Thus Prettier can enforce the use of Explicit types across the project.
 
-This feature was added to the plugin at version `1.0.0-alpha.27`.
+## Warning
+
+Before `v0.8.0`, `byte` was an alias for `bytes1` but it has been removed.
 
 # Parentheses
 
@@ -16,19 +18,19 @@ However, I wouldn't attempt proposing this change in [prettier-solidity](https:/
 
 To my surprise, as long as the [Order of Precedence of Operators](https://solidity.readthedocs.io/en/latest/miscellaneous.html#order) is followed (which is the whole idea behind this PoC), the bytecode will be the **same**.
 
+## Warning
+
+Since `v0.8.0` Solidity is parsing `a ** b ** c;` as `a ** (b ** c);` previous versions would parse it as `(a ** b) ** c;`.
+
 # Run the tests
 
-I've kept all of the tests made before thinking that I could just compare the bytecode.
+I've kept all of the tests made before comming up with just comparing the bytecode.
 
 To run the tests, juts type:
 
 ```Bash
 npm test
 ```
-
-## Warning
-
-In Prettier JS prints `a ** b ** c;` like `a ** (b ** c);` which is false in Solidity as the compiled code shows that `a ** b ** c;` equals to `(a ** b) ** c;`.
 
 # Proposed Changes
 
@@ -96,7 +98,7 @@ Here is a list of all the combinations and their changes:
 | `a ** b * c;`      | `a ** b * c;`        |
 | `a ** b / c;`      | `a ** b / c;`        |
 | `a ** b % c;`      | `a ** b % c;`        |
-| `a ** b ** c;`     | `(a ** b) ** c;`     |
+| `a ** b ** c;`     | `a ** (b ** c);`     |
 | `a ** b << c;`     | `(a ** b) << c;`     |
 | `a ** b >> c;`     | `(a ** b) >> c;`     |
 | `a ** b & c;`      | `(a ** b) & c;`      |
