@@ -7,7 +7,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> (b + c);
+        unchecked {
+            return a >> (b + c);
+        }
     }
 
     function shiftRSub(
@@ -15,7 +17,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> (b - c);
+        unchecked {
+            return a >> (b - c);
+        }
     }
 
     function shiftRMul(
@@ -23,7 +27,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> (b * c);
+        unchecked {
+            return a >> (b * c);
+        }
     }
 
     function shiftRDiv(
@@ -31,7 +37,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> (b / c);
+        unchecked {
+            return a >> (b / c);
+        }
     }
 
     function shiftRMod(
@@ -39,7 +47,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> b % c;
+        unchecked {
+            return a >> b % c;
+        }
     }
 
     function shiftRExp(
@@ -47,7 +57,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a >> (b**c);
+        unchecked {
+            return a >> (b**c);
+        }
     }
 
     function shiftRShiftL(
@@ -55,7 +67,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a >> b) << c;
+        unchecked {
+            return (a >> b) << c;
+        }
     }
 
     function shiftRShiftR(
@@ -63,7 +77,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a >> b) >> c;
+        unchecked {
+            return (a >> b) >> c;
+        }
     }
 
     function shiftRBitAnd(
@@ -71,7 +87,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a >> b) & c;
+        unchecked {
+            return (a >> b) & c;
+        }
     }
 
     function shiftRBitOr(
@@ -79,7 +97,9 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a >> b) | c;
+        unchecked {
+            return (a >> b) | c;
+        }
     }
 
     function shiftRBitXor(
@@ -87,6 +107,8 @@ contract ShiftRPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a >> b) ^ c;
+        unchecked {
+            return (a >> b) ^ c;
+        }
     }
 }

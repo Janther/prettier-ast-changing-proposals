@@ -7,7 +7,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b + c);
+        unchecked {
+            return a ^ (b + c);
+        }
     }
 
     function bitXorSub(
@@ -15,7 +17,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b - c);
+        unchecked {
+            return a ^ (b - c);
+        }
     }
 
     function bitXorMul(
@@ -23,7 +27,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b * c);
+        unchecked {
+            return a ^ (b * c);
+        }
     }
 
     function bitXorDiv(
@@ -31,7 +37,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b / c);
+        unchecked {
+            return a ^ (b / c);
+        }
     }
 
     function bitXorMod(
@@ -39,7 +47,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ b % c;
+        unchecked {
+            return a ^ b % c;
+        }
     }
 
     function bitXorExp(
@@ -47,7 +57,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b**c);
+        unchecked {
+            return a ^ (b**c);
+        }
     }
 
     function bitXorShiftL(
@@ -55,7 +67,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b << c);
+        unchecked {
+            return a ^ (b << c);
+        }
     }
 
     function bitXorShiftR(
@@ -63,7 +77,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b >> c);
+        unchecked {
+            return a ^ (b >> c);
+        }
     }
 
     function bitXorBitAnd(
@@ -71,7 +87,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ (b & c);
+        unchecked {
+            return a ^ (b & c);
+        }
     }
 
     function bitXorBitOr(
@@ -79,7 +97,9 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a ^ b) | c;
+        unchecked {
+            return (a ^ b) | c;
+        }
     }
 
     function bitXorBitXor(
@@ -87,6 +107,8 @@ contract BitXorPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a ^ b ^ c;
+        unchecked {
+            return a ^ b ^ c;
+        }
     }
 }

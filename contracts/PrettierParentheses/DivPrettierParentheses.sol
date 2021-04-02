@@ -7,7 +7,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a / b + c;
+        unchecked {
+            return a / b + c;
+        }
     }
 
     function divSub(
@@ -15,7 +17,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a / b - c;
+        unchecked {
+            return a / b - c;
+        }
     }
 
     function divMul(
@@ -23,7 +27,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) * c;
+        unchecked {
+            return (a / b) * c;
+        }
     }
 
     function divDiv(
@@ -31,7 +37,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a / b / c;
+        unchecked {
+            return a / b / c;
+        }
     }
 
     function divMod(
@@ -39,7 +47,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) % c;
+        unchecked {
+            return (a / b) % c;
+        }
     }
 
     function divExp(
@@ -47,7 +57,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a / b**c;
+        unchecked {
+            return a / b**c;
+        }
     }
 
     function divShiftL(
@@ -55,7 +67,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) << c;
+        unchecked {
+            return (a / b) << c;
+        }
     }
 
     function divShiftR(
@@ -63,7 +77,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) >> c;
+        unchecked {
+            return (a / b) >> c;
+        }
     }
 
     function divBitAnd(
@@ -71,7 +87,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) & c;
+        unchecked {
+            return (a / b) & c;
+        }
     }
 
     function divBitOr(
@@ -79,7 +97,9 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) | c;
+        unchecked {
+            return (a / b) | c;
+        }
     }
 
     function divBitXor(
@@ -87,6 +107,8 @@ contract DivPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a / b) ^ c;
+        unchecked {
+            return (a / b) ^ c;
+        }
     }
 }

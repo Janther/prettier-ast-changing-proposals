@@ -7,7 +7,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**b + c;
+        unchecked {
+            return a**b + c;
+        }
     }
 
     function expSub(
@@ -15,7 +17,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**b - c;
+        unchecked {
+            return a**b - c;
+        }
     }
 
     function expMul(
@@ -23,7 +27,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**b * c;
+        unchecked {
+            return a**b * c;
+        }
     }
 
     function expDiv(
@@ -31,7 +37,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**b / c;
+        unchecked {
+            return a**b / c;
+        }
     }
 
     function expMod(
@@ -39,7 +47,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**b % c;
+        unchecked {
+            return a**b % c;
+        }
     }
 
     function expExp(
@@ -47,7 +57,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a**(b**c);
+        unchecked {
+            return a**(b**c);
+        }
     }
 
     function expShiftL(
@@ -55,7 +67,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b) << c;
+        unchecked {
+            return (a**b) << c;
+        }
     }
 
     function expShiftR(
@@ -63,7 +77,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b) >> c;
+        unchecked {
+            return (a**b) >> c;
+        }
     }
 
     function expBitAnd(
@@ -71,7 +87,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b) & c;
+        unchecked {
+            return (a**b) & c;
+        }
     }
 
     function expBitOr(
@@ -79,7 +97,9 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b) | c;
+        unchecked {
+            return (a**b) | c;
+        }
     }
 
     function expBitXor(
@@ -87,6 +107,8 @@ contract ExpPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a**b) ^ c;
+        unchecked {
+            return (a**b) ^ c;
+        }
     }
 }

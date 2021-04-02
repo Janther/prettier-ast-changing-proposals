@@ -7,7 +7,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a * b + c;
+        unchecked {
+            return a * b + c;
+        }
     }
 
     function mulSub(
@@ -15,7 +17,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a * b - c;
+        unchecked {
+            return a * b - c;
+        }
     }
 
     function mulMul(
@@ -23,7 +27,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a * b * c;
+        unchecked {
+            return a * b * c;
+        }
     }
 
     function mulDiv(
@@ -31,7 +37,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) / c;
+        unchecked {
+            return (a * b) / c;
+        }
     }
 
     function mulMod(
@@ -39,7 +47,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) % c;
+        unchecked {
+            return (a * b) % c;
+        }
     }
 
     function mulExp(
@@ -47,7 +57,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a * b**c;
+        unchecked {
+            return a * b**c;
+        }
     }
 
     function mulShiftL(
@@ -55,7 +67,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) << c;
+        unchecked {
+            return (a * b) << c;
+        }
     }
 
     function mulShiftR(
@@ -63,7 +77,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) >> c;
+        unchecked {
+            return (a * b) >> c;
+        }
     }
 
     function mulBitAnd(
@@ -71,7 +87,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) & c;
+        unchecked {
+            return (a * b) & c;
+        }
     }
 
     function mulBitOr(
@@ -79,7 +97,9 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) | c;
+        unchecked {
+            return (a * b) | c;
+        }
     }
 
     function mulBitXor(
@@ -87,6 +107,8 @@ contract MulPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a * b) ^ c;
+        unchecked {
+            return (a * b) ^ c;
+        }
     }
 }

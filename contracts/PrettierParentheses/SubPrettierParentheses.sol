@@ -7,7 +7,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - b + c;
+        unchecked {
+            return a - b + c;
+        }
     }
 
     function subSub(
@@ -15,7 +17,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - b - c;
+        unchecked {
+            return a - b - c;
+        }
     }
 
     function subMul(
@@ -23,7 +27,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - b * c;
+        unchecked {
+            return a - b * c;
+        }
     }
 
     function subDiv(
@@ -31,7 +37,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - b / c;
+        unchecked {
+            return a - b / c;
+        }
     }
 
     function subMod(
@@ -39,7 +47,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - (b % c);
+        unchecked {
+            return a - (b % c);
+        }
     }
 
     function subExp(
@@ -47,7 +57,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a - b**c;
+        unchecked {
+            return a - b**c;
+        }
     }
 
     function subShiftL(
@@ -55,7 +67,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a - b) << c;
+        unchecked {
+            return (a - b) << c;
+        }
     }
 
     function subShiftR(
@@ -63,7 +77,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a - b) >> c;
+        unchecked {
+            return (a - b) >> c;
+        }
     }
 
     function subBitAnd(
@@ -71,7 +87,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a - b) & c;
+        unchecked {
+            return (a - b) & c;
+        }
     }
 
     function subBitOr(
@@ -79,7 +97,9 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a - b) | c;
+        unchecked {
+            return (a - b) | c;
+        }
     }
 
     function subBitXor(
@@ -87,6 +107,8 @@ contract SubPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a - b) ^ c;
+        unchecked {
+            return (a - b) ^ c;
+        }
     }
 }

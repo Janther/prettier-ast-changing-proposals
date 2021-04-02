@@ -7,7 +7,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a % b) + c;
+        unchecked {
+            return (a % b) + c;
+        }
     }
 
     function modSub(
@@ -15,7 +17,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a % b) - c;
+        unchecked {
+            return (a % b) - c;
+        }
     }
 
     function modMul(
@@ -23,7 +27,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a % b) * c;
+        unchecked {
+            return (a % b) * c;
+        }
     }
 
     function modDiv(
@@ -31,7 +37,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a % b) / c;
+        unchecked {
+            return (a % b) / c;
+        }
     }
 
     function modMod(
@@ -39,7 +47,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a % b) % c;
+        unchecked {
+            return (a % b) % c;
+        }
     }
 
     function modExp(
@@ -47,7 +57,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b**c;
+        unchecked {
+            return a % b**c;
+        }
     }
 
     function modShiftL(
@@ -55,7 +67,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b << c;
+        unchecked {
+            return a % b << c;
+        }
     }
 
     function modShiftR(
@@ -63,7 +77,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b >> c;
+        unchecked {
+            return a % b >> c;
+        }
     }
 
     function modBitAnd(
@@ -71,7 +87,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b & c;
+        unchecked {
+            return a % b & c;
+        }
     }
 
     function modBitOr(
@@ -79,7 +97,9 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b | c;
+        unchecked {
+            return a % b | c;
+        }
     }
 
     function modBitXor(
@@ -87,6 +107,8 @@ contract ModPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a % b ^ c;
+        unchecked {
+            return a % b ^ c;
+        }
     }
 }

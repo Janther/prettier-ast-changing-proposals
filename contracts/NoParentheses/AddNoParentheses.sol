@@ -7,7 +7,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b + c;
+        unchecked { return a + b + c; }
     }
 
     function addSub(uint256 a, uint256 b, uint256 c)
@@ -15,7 +15,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b - c;
+        unchecked { return a + b - c; }
     }
 
     function addMul(uint256 a, uint256 b, uint256 c)
@@ -23,7 +23,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b * c;
+        unchecked { return a + b * c; }
     }
 
     function addDiv(uint256 a, uint256 b, uint256 c)
@@ -31,7 +31,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b / c;
+        unchecked { return a + b / c; }
     }
 
     function addMod(uint256 a, uint256 b, uint256 c)
@@ -39,7 +39,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b % c;
+        unchecked { return a + b % c; }
     }
 
     function addExp(uint256 a, uint256 b, uint256 c)
@@ -47,7 +47,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b ** c;
+        unchecked { return a + b ** c; }
     }
 
     function addShiftL(uint256 a, uint256 b, uint256 c)
@@ -55,7 +55,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b << c;
+        unchecked { return a + b << c; }
     }
 
     function addShiftR(uint256 a, uint256 b, uint256 c)
@@ -63,7 +63,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b >> c;
+        unchecked { return a + b >> c; }
     }
 
     function addBitAnd(uint256 a, uint256 b, uint256 c)
@@ -71,7 +71,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b & c;
+        unchecked { return a + b & c; }
     }
 
     function addBitOr(uint256 a, uint256 b, uint256 c)
@@ -79,7 +79,7 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b | c;
+        unchecked { return a + b | c; }
     }
 
     function addBitXor(uint256 a, uint256 b, uint256 c)
@@ -87,6 +87,6 @@ contract AddNoParentheses {
         pure
         returns (uint256)
     {
-        return a + b ^ c;
+        unchecked { return a + b ^ c; }
     }
 }

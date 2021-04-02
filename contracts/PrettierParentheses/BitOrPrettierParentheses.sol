@@ -7,7 +7,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b + c);
+        unchecked {
+            return a | (b + c);
+        }
     }
 
     function bitOrSub(
@@ -15,7 +17,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b - c);
+        unchecked {
+            return a | (b - c);
+        }
     }
 
     function bitOrMul(
@@ -23,7 +27,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b * c);
+        unchecked {
+            return a | (b * c);
+        }
     }
 
     function bitOrDiv(
@@ -31,7 +37,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b / c);
+        unchecked {
+            return a | (b / c);
+        }
     }
 
     function bitOrMod(
@@ -39,7 +47,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | b % c;
+        unchecked {
+            return a | b % c;
+        }
     }
 
     function bitOrExp(
@@ -47,7 +57,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b**c);
+        unchecked {
+            return a | (b**c);
+        }
     }
 
     function bitOrShiftL(
@@ -55,7 +67,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b << c);
+        unchecked {
+            return a | (b << c);
+        }
     }
 
     function bitOrShiftR(
@@ -63,7 +77,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b >> c);
+        unchecked {
+            return a | (b >> c);
+        }
     }
 
     function bitOrBitAnd(
@@ -71,7 +87,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b & c);
+        unchecked {
+            return a | (b & c);
+        }
     }
 
     function bitOrBitOr(
@@ -79,7 +97,9 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | b | c;
+        unchecked {
+            return a | b | c;
+        }
     }
 
     function bitOrBitXor(
@@ -87,6 +107,8 @@ contract BitOrPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a | (b ^ c);
+        unchecked {
+            return a | (b ^ c);
+        }
     }
 }

@@ -7,7 +7,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + b + c;
+        unchecked {
+            return a + b + c;
+        }
     }
 
     function addSub(
@@ -15,7 +17,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + b - c;
+        unchecked {
+            return a + b - c;
+        }
     }
 
     function addMul(
@@ -23,7 +27,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + b * c;
+        unchecked {
+            return a + b * c;
+        }
     }
 
     function addDiv(
@@ -31,7 +37,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + b / c;
+        unchecked {
+            return a + b / c;
+        }
     }
 
     function addMod(
@@ -39,7 +47,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + (b % c);
+        unchecked {
+            return a + (b % c);
+        }
     }
 
     function addExp(
@@ -47,7 +57,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return a + b**c;
+        unchecked {
+            return a + b**c;
+        }
     }
 
     function addShiftL(
@@ -55,7 +67,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a + b) << c;
+        unchecked {
+            return (a + b) << c;
+        }
     }
 
     function addShiftR(
@@ -63,7 +77,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a + b) >> c;
+        unchecked {
+            return (a + b) >> c;
+        }
     }
 
     function addBitAnd(
@@ -71,7 +87,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a + b) & c;
+        unchecked {
+            return (a + b) & c;
+        }
     }
 
     function addBitOr(
@@ -79,7 +97,9 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a + b) | c;
+        unchecked {
+            return (a + b) | c;
+        }
     }
 
     function addBitXor(
@@ -87,6 +107,8 @@ contract AddPrettierParentheses {
         uint256 b,
         uint256 c
     ) public pure returns (uint256) {
-        return (a + b) ^ c;
+        unchecked {
+            return (a + b) ^ c;
+        }
     }
 }
