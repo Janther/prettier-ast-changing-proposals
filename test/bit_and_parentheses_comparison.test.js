@@ -21,7 +21,7 @@ contract(
     it("has the same bytecode", function () {
       assert.equal(
         NoParentheses.bytecode.slice(0, -86),
-        PrettierParentheses.bytecode.slice(0, -86)
+        PrettierParentheses.bytecode.slice(0, -86),
       );
     });
 
@@ -66,7 +66,7 @@ contract(
       const prettierResult = await prettierParentheses.bitAndShiftL.call(
         a,
         b,
-        c
+        c,
       );
       assert.ok(result.eq(prettierResult));
     });
@@ -76,7 +76,7 @@ contract(
       const prettierResult = await prettierParentheses.bitAndShiftR.call(
         a,
         b,
-        c
+        c,
       );
       assert.ok(result.eq(prettierResult));
     });
@@ -86,7 +86,7 @@ contract(
       const prettierResult = await prettierParentheses.bitAndBitAnd.call(
         a,
         b,
-        c
+        c,
       );
       assert.ok(result.eq(prettierResult));
     });
@@ -96,7 +96,7 @@ contract(
       const prettierResult = await prettierParentheses.bitAndBitOr.call(
         a,
         b,
-        c
+        c,
       );
       assert.ok(result.eq(prettierResult));
     });
@@ -106,9 +106,9 @@ contract(
       const prettierResult = await prettierParentheses.bitAndBitXor.call(
         a,
         b,
-        c
+        c,
       );
       assert.ok(result.eq(prettierResult));
     });
-  }
+  },
 );

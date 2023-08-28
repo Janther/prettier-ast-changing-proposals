@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.3;
+pragma solidity 0.8.21;
 
 contract VariableTypesAlias {
     uint public a;
@@ -21,15 +21,7 @@ contract VariableTypesAlias {
         int _b,
         uint _e,
         int _f
-    )
-        public
-        returns (
-            uint,
-            int,
-            uint,
-            int
-        )
-    {
+    ) public returns (uint, int, uint, int) {
         emit Event(_a, _b, _e, _f);
         return (_a, _b, _e, _f);
     }

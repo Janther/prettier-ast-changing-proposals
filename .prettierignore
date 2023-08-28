@@ -1,1 +1,1 @@
-contracts/NoParentheses
+contracts/NoParentheses/**/*.sol

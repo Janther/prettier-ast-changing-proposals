@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.3;
+pragma solidity 0.8.21;
 
 contract VariableTypesMixed {
     uint256 public a;
@@ -21,15 +21,7 @@ contract VariableTypesMixed {
         int256 _b,
         uint _e,
         int _f
-    )
-        public
-        returns (
-            uint,
-            int256,
-            uint256,
-            int
-        )
-    {
+    ) public returns (uint, int256, uint256, int) {
         emit Event(_a, _b, _e, _f);
         return (_a, _b, _e, _f);
     }

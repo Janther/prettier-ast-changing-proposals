@@ -19,7 +19,7 @@ contract("Compare AddNoParentheses to AddPrettierParentheses", (accounts) => {
   it("has the same bytecode", function () {
     assert.equal(
       NoParentheses.bytecode.slice(0, -86),
-      PrettierParentheses.bytecode.slice(0, -86)
+      PrettierParentheses.bytecode.slice(0, -86),
     );
   });
 

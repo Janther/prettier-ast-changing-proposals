@@ -19,7 +19,7 @@ contract("Compare DivNoParentheses to DivPrettierParentheses", (accounts) => {
   it("has the same bytecode", function () {
     assert.equal(
       NoParentheses.bytecode.slice(0, -86),
-      PrettierParentheses.bytecode.slice(0, -86)
+      PrettierParentheses.bytecode.slice(0, -86),
     );
   });
 
@@ -63,7 +63,7 @@ contract("Compare DivNoParentheses to DivPrettierParentheses", (accounts) => {
         assert.ok(result.eq(prettierResult));
       } catch (e) {
         console.error(
-          "Combination of a, b, and c triggered and invalid opcode exception."
+          "Combination of a, b, and c triggered and invalid opcode exception.",
         );
         console.error("a:", a.toString(16));
         console.error("b:", b.toString(16));

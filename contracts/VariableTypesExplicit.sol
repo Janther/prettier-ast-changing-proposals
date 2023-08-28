@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.3;
+pragma solidity 0.8.21;
 
 contract VariableTypesExplicit {
     uint256 public a;
@@ -14,27 +14,14 @@ contract VariableTypesExplicit {
         int256 f;
     }
 
-    event Event(
-        uint256 _a,
-        int256 _b,
-        uint256 _e,
-        int256 _f
-    );
+    event Event(uint256 _a, int256 _b, uint256 _e, int256 _f);
 
     function func(
         uint256 _a,
         int256 _b,
         uint256 _e,
         int256 _f
-    )
-        public
-        returns (
-            uint256,
-            int256,
-            uint256,
-            int256
-        )
-    {
+    ) public returns (uint256, int256, uint256, int256) {
         emit Event(_a, _b, _e, _f);
         return (_a, _b, _e, _f);
     }

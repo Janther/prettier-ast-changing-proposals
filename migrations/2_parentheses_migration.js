@@ -20,21 +20,21 @@ const DivPrettierParentheses = artifacts.require("DivPrettierParentheses");
 const ModPrettierParentheses = artifacts.require("ModPrettierParentheses");
 const ExpPrettierParentheses = artifacts.require("ExpPrettierParentheses");
 const ShiftLPrettierParentheses = artifacts.require(
-  "ShiftLPrettierParentheses"
+  "ShiftLPrettierParentheses",
 );
 const ShiftRPrettierParentheses = artifacts.require(
-  "ShiftRPrettierParentheses"
+  "ShiftRPrettierParentheses",
 );
 const BitAndPrettierParentheses = artifacts.require(
-  "BitAndPrettierParentheses"
+  "BitAndPrettierParentheses",
 );
 const BitOrPrettierParentheses = artifacts.require("BitOrPrettierParentheses");
 const BitXorPrettierParentheses = artifacts.require(
-  "BitXorPrettierParentheses"
+  "BitXorPrettierParentheses",
 );
 const LogicPrettierParentheses = artifacts.require("LogicPrettierParentheses");
 
-module.exports = function(deployer) {
+module.exports = function (deployer) {
   deployer.deploy(NoParentheses);
   deployer.deploy(AddNoParentheses);
   deployer.deploy(SubNoParentheses);
