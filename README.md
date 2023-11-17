@@ -24,7 +24,7 @@ Since `v0.8.0` Solidity is parsing `a ** b ** c;` as `a ** (b ** c);` previous v
 
 # Run the tests
 
-I've kept all of the tests made before comming up with just comparing the bytecode.
+I've kept all of the tests made before coming up with just comparing the bytecode.
 
 To run the tests, juts type:
 
