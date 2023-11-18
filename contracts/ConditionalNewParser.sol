@@ -22,6 +22,7 @@ contract ConditionalNewParser {
         bool _g
     ) public pure returns (bool) {
         return _a ? _b : (_c ? _d : (_e ? _f : _g));
+        // return _a ? _b : ((_c ? _d : _e) ? _f : _g);
     }
 
     function func3(
